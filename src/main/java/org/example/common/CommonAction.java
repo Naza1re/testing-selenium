@@ -20,7 +20,7 @@ public class CommonAction {
                 case "win_chrome":
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                     driver = new ChromeDriver();
-
+                    break;
                 default:
                     System.out.println("Failed to find chrome driver");
             }

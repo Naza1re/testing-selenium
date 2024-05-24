@@ -10,10 +10,10 @@ public class RealtHomePage extends BasePage {
         super(driver);
     }
 
-    By countRooms = By.xpath("//*[@id=\"__next\"]/div[1]/div[1]/main/div/div/div/div[4]/div/div[2]/form/div/div[1]/div[2]/div/div/span[1]");
+    By countRooms = By.xpath("//span[text()='Кол-во комнат']");
     By optionTwoRooms = By.xpath("//*[contains(text(),'2к квартира')]");
-    By findButton = By.xpath("//*[@id=\"__next\"]/div[1]/div[1]/main/div/div/div/div[4]/div/div[2]/form/div/div[2]/div/a[2]");
-    By refuseAlert = By.xpath("//*[@id=\"gdpr-portal-root\"]/div/div/div/button[1]");
+    By findButton = By.xpath("//a[@type='link'][2]/span/span");
+    By refuseAlert = By.xpath("//span[text()='Отклонить']");
     public RealtHomePage enterCountRooms() {
         driver.findElement(countRooms).click();
         driver.findElement(optionTwoRooms).click();

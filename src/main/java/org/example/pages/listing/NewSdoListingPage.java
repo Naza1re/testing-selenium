@@ -9,7 +9,7 @@ public class NewSdoListingPage extends BasePage {
         super(driver);
     }
 
-    By теорияИнформации = By.xpath("//*[@id=\"frontpage-course-list\"]/div/div[41]/div[1]/h3/a");
+    By теорияИнформации = By.xpath("//*[@id=\"frontpage-course-list\"]/div/div[41]/div[1]/h3/a//*[@id=\"frontpage-course-list\"]/div/div[41]/div[1]/h3/a");
 
 
     public NewSdoListingPage openTуорияИнформации() {
